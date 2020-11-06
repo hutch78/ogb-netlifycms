@@ -3,17 +3,23 @@ a {
 }
 
 .branding-title {
-  @apply block font-black text-accent text-5xl tracking-tight transition-colors duration-200 ease-in-out;
+  @apply block font-black text-5xl tracking-tight transition-colors duration-200 ease-in-out;
 }
 
 .heading {
-  @apply block font-black text-primary-900 text-4xl tracking-tight transition-colors duration-200 ease-in-out;
+  @apply block font-black text-4xl tracking-tight transition-colors duration-200 ease-in-out;
+  &--main {
+    @apply text-6xl text-accent;
+  }
 }
 
 .sub-heading {
   word-spacing: 0.15em;
-  @apply block font-light text-base tracking-tight pb-4 transition-colors duration-200 ease-in-out;
+  @apply block font-normal text-base tracking-tight pb-4 transition-colors duration-200 ease-in-out;
   @media (min-width: theme('screens.lg')) {
     @apply text-xl
+  }
+  &--main {
+    @apply text-3xl text-primary-700 font-light;
   }
 }

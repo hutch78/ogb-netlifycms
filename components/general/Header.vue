@@ -1,9 +1,9 @@
 <template>
-  <header class="sidebar flex-shrink-0 max-w-50 p-3 lg:p-5 bg-primary-100">
+  <header class="sidebar flex-shrink-0 max-w-50 p-3 lg:p-5">
     <div class="">
       <div class="branding text-left">
         <h1 class="branding-heading">
-          <img class="block w-20 lg:w-40" src="/img/transpareny-primary.png" alt="" />
+          <img class="logo mb-2" src="/img/transpareny-primary.png" alt="" />
           <span class="sr-only">OGB Sportz</span>
         </h1>
         <h2 class="sub-heading mb-0">Sports Unlocked</h2>
@@ -11,13 +11,16 @@
       <nav class="">
         <ul class="flex flex-col items-start">
           <li class="inline-block mb-2">
-            <nuxt-link class="block py-4 px-8" to="/">Home</nuxt-link>
+            <nuxt-link class="block py-4 px-8 rounded-md hover:bg-primary-700" to="/">Home</nuxt-link>
           </li>
           <li class="inline-block mb-2">
-            <nuxt-link class="block py-4 px-8" to="/blog">Blog</nuxt-link>
+            <nuxt-link class="block py-4 px-8 rounded-md hover:bg-primary-700" to="/about">About Us</nuxt-link>
+          </li>
+          <li class="inline-block mb-2">
+            <nuxt-link class="block py-4 px-8 rounded-md hover:bg-primary-700" to="/blog">Blog</nuxt-link>
           </li>
           <li class="inline-block">
-            <nuxt-link class="block py-4 px-8" to="/projects">Projects</nuxt-link>
+            <nuxt-link class="block py-4 px-8 rounded-md hover:bg-primary-700" to="/projects">Projects</nuxt-link>
           </li>
         </ul>
       </nav>
@@ -32,10 +35,15 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
+.logo {
+  max-width: 150px;
+  display: block;
+}
+
 .nuxt-link-exact-active {
-  @apply text-accent-200 bg-accent bg-opacity-20;
+  @apply text-accent-600 bg-accent bg-opacity-20;
   &:hover {
-    @apply text-white bg-accent-600;
+    @apply text-white bg-primary-600;
   }
 }
 </style>
