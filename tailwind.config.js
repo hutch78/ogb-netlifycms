@@ -11,7 +11,7 @@ module.exports = {
     darkSelector: '.dark-mode',
     extend: {
       fontFamily: {
-        sans: ['Karla', ...defaultTheme.fontFamily.sans],
+        sans: ['Proxima Nova', ...defaultTheme.fontFamily.sans],
         mono: [...defaultTheme.fontFamily.mono]
       },
       colors: {
@@ -28,16 +28,16 @@ module.exports = {
           900: '#0D131E'
         },
         accent: {
-          100: '#F9E9EA',
-          200: '#EEC3C6',
-          300: '#E09FA4',
-          400: '#CF7D83',
-          500: '#BD5D65',
-          default: '#A84048',
-          600: '#8D2D34',
-          700: '#6E1D23',
-          800: '#4D1015',
-          900: '#280709'
+          900: '#331E00',
+          800: '#663B00',
+          700: '#995700',
+          600: '#CC740B',
+          default: '#F7901E',
+          500: '#FFA53C',
+          400: '#FFB95E',
+          300: '#FFCD8A',
+          200: '#FFE1B8',
+          100: '#FFF4E6'
         }
       },
       opacity: {
