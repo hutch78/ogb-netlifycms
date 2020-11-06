@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="layout-wrapper flex w-full">
     <Header />
     <ColorModePicker />
     <nuxt />
@@ -17,3 +17,9 @@ export default {
   }
 }
 </script>
+
+<style lang="postcss">
+.layout-wrapper {
+  padding-top: $header-height;
+}
+</style>

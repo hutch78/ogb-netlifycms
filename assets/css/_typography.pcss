@@ -6,17 +6,14 @@ a {
   @apply block font-black text-accent text-5xl tracking-tight transition-colors duration-200 ease-in-out;
 }
 
-.page-title {
-  @apply block font-black text-primary-200 text-4xl tracking-tight transition-colors duration-200 ease-in-out;
+.heading {
+  @apply block font-black text-primary-900 text-4xl tracking-tight transition-colors duration-200 ease-in-out;
 }
 
-.subtitle {
+.sub-heading {
   word-spacing: 0.15em;
-  @apply block font-light text-3xl tracking-tight pb-4 transition-colors duration-200 ease-in-out;
-}
-
-.light-mode {
-  .page-title {
-    @apply text-primary-800;
+  @apply block font-light text-base tracking-tight pb-4 transition-colors duration-200 ease-in-out;
+  @media (min-width: theme('screens.lg')) {
+    @apply text-xl
   }
 }

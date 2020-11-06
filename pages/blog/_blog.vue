@@ -1,6 +1,6 @@
 <template>
   <article v-if="blogPost" class="main article">
-    <h1 class="page-title font-black">{{ blogPost.title }}</h1>
+    <h1 class="heading">{{ blogPost.title }}</h1>
     <h6
       v-if="blogPost.date"
       class="inline-block py-1 px-2 my-2 bg-accent text-white font-medium rounded-sm dark:bg-accent whitespace-no-wrap"

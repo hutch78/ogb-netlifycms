@@ -1,7 +1,9 @@
 <template>
   <div class="main">
-    <!-- <logo /> -->
-    <h1 class="page-title">Home</h1>
+    <div class="container">
+      <!-- <logo /> -->
+      <h1 class="heading">Welcome to OGB Sports</h1>
+    </div>
   </div>
 </template>
 

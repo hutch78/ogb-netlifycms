@@ -1,6 +1,6 @@
 <template>
   <article v-if="projectPost" class="main article">
-    <h1 class="page-title">{{ projectPost.title }}</h1>
+    <h1 class="heading">{{ projectPost.title }}</h1>
     <p class="mt-4">{{ projectPost.description }}</p>
     <img class="cover-image" :src="projectPost.cover" />
     <div class="block mt-8 mb-4" v-html="$md.render(projectPost.body)" />
